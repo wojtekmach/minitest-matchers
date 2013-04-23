@@ -1,5 +1,7 @@
 === HEAD
 
+=== 1.3.0 / 2013-04-22
+
 * 2 major enhancements
 
   * New home: github.com/wojtekmach/minitest-matchers

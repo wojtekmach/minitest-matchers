@@ -1,7 +1,7 @@
 require "minitest/spec"
 
 module MiniTest::Matchers
-  VERSION = "1.2.0" # :nodoc:
+  VERSION = "1.3.0" # :nodoc:
 end
 
 module MiniTest
