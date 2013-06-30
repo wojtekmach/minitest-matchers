@@ -4,7 +4,7 @@ require "minitest/matchers/version"
 
 Gem::Specification.new do |s|
   s.name        = "minitest-matchers"
-  s.version     = MiniTest::Matchers::VERSION
+  s.version     = Minitest::Matchers::VERSION
   s.authors     = ["Wojciech Mach", "Ryan Davis"]
   s.email       = ["wojtek@wojtekmach.pl", "ryand-ruby@zenspider.com"]
   s.homepage    = ""
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "minitest", "~> 4.7"
+  s.add_dependency "minitest", "~> 5.0"
 
   s.add_development_dependency "rake"
 end
