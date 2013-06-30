@@ -53,7 +53,7 @@ module MiniTest
 
   module Expectations
     ##
-    # See MiniTest::Assertions#assert_must
+    # See Minitest::Assertions#assert_must
     #
     #     user.must have_valid(:email).when("user@example.com")
     #
@@ -62,7 +62,7 @@ module MiniTest
     infect_an_assertion :assert_must, :must
 
     ##
-    # See MiniTest::Assertions#assert_wont
+    # See Minitest::Assertions#assert_wont
     #
     #     user.wont have_valid(:email).when("bad@email")
     #
@@ -72,7 +72,7 @@ module MiniTest
   end
 end
 
-class MiniTest::Spec
+class Minitest::Spec
   ##
   # Expects that matcher matches the subject
   #
@@ -132,7 +132,7 @@ class MiniTest::Spec
   end
 end
 
-class MiniTest::Unit::TestCase
+class Minitest::Test
   ##
   # Defines assert_* assertion and must_* expectation for a matcher
   #
@@ -144,7 +144,7 @@ class MiniTest::Unit::TestCase
   #     # ...
   #   end
   #
-  #   MiniTest::Unit::TestCase.register_matcher HaveContent, :have_content
+  #   Minitest::Unit::TestCase.register_matcher HaveContent, :have_content
   #
   #   class MyTest < Test::Unit::TestCase
   #     def test_index
@@ -197,6 +197,6 @@ class MiniTest::Unit::TestCase
   end
 end
 
-class MiniTest::Spec # :nodoc:
-  include MiniTest::Matchers
+class Minitest::Spec # :nodoc:
+  include Minitest::Matchers
 end
