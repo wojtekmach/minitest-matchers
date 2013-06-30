@@ -1,16 +1,10 @@
-# -*- ruby -*-
+require "bundler/gem_tasks"
+require "rake/testtask"
 
-require "rubygems"
-require "hoe"
-
-Hoe.plugin :minitest
-Hoe.plugin :gemspec
-
-Hoe.spec "minitest-matchers" do
-  developer "Ryan Davis", "ryand-ruby@zenspider.com"
-  developer "Wojciech Mach", "wojtek@wojtekmach.pl"
-
-  dependency "minitest", "~> 4.7"
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = false
 end
 
-# vim: syntax=ruby
+task :default => :test
