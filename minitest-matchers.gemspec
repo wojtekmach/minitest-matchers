@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Adds support for RSpec-style matchers}
   s.description = s.summary
 
-  s.rubyforge_project = "minitest-metadata"
+  s.rubyforge_project = "minitest-matchers"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
