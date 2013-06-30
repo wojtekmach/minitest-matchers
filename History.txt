@@ -1,5 +1,11 @@
 === HEAD
 
+=== 1.4.0 / 2013-06-30
+
+* 1 major enhancements
+
+  * Update for Minitest 5.0 [elskwid]
+
 === 1.3.0 / 2013-04-22
 
 * 2 major enhancements
