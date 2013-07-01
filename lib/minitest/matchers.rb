@@ -144,9 +144,9 @@ class Minitest::Test
   #     # ...
   #   end
   #
-  #   Minitest::Unit::TestCase.register_matcher HaveContent, :have_content
+  #   Minitest::Test.register_matcher HaveContent, :have_content
   #
-  #   class MyTest < Test::Unit::TestCase
+  #   class MyTest < Minitest::Test
   #     def test_index
   #       visit "/"
   #       assert_have_content page, "Hello"
