@@ -196,7 +196,3 @@ class Minitest::Test
     Object.infect_an_assertion :"refute_#{name}", :"wont_#{exp_name}", true
   end
 end
-
-class Minitest::Spec # :nodoc:
-  include Minitest::Matchers
-end
