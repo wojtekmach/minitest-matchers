@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    minitest-matchers (1.4.0)
+    minitest-matchers (1.4.1)
       minitest (~> 5.0)
 
 GEM
