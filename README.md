@@ -26,7 +26,7 @@ For use with Rails check out (ValidAttribute + Capybara):
 
 * Enables you to use existing matcher classes from projects like
   valid\_attribute and capybara
-* Can be used both in MiniTest::Unit::TestCase & MiniTest::Spec
+* Can be used both in Minitest::Test & Minitest::Spec
 
 ## Synopsis
 
@@ -46,7 +46,7 @@ end
 
 # Using minitest/unit
 
-class PostTest < MiniTest::Unit::TestCase
+class PostTest < Minitest::Test
   include ValidAttribute::Method
 
   def test_validations
@@ -93,8 +93,8 @@ You can also register matcher so that it works similar to built-in
 assertions and expectations. Note subject must be the first argument in assertion.
 
 ```ruby
-MiniTest::Unit::TestCase.register_matcher HaveContent, :have_content
-MiniTest::Unit::TestCase.register_matcher :have_selector, :have_selector
+Minitest::Test.register_matcher HaveContent, :have_content
+Minitest::Test.register_matcher :have_selector, :have_selector
 
 assert_have_content page, "Hello"
 assert_have_selector page, :xpath, "//table/tr"
@@ -105,7 +105,7 @@ page.must_have_selector :xpath, "//table/tr"
 
 ## Requirements
 
-* `minitest >= 2.7.0`
+* `minitest ~> 5.0`
 
 ## Install
 
