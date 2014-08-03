@@ -8,6 +8,8 @@ http://github.com/wojtekmach/minitest-matchers
 
 Don't use it! Writing simple assertions (and Minitest way of transforming them to expectations) is almost always a better idea anyway. Work with your favourite library authors to start with assertions and add matchers for convenience and not the other way around. Keep it simple.
 
+For simple assertions that adhere to the matcher spec, but without all the expectation _infections_, see **[minitest-matchers_vaccine](https://github.com/rmm5t/minitest-matchers_vaccine)**.
+
 ## Description
 
 minitest-matchers adds support for RSpec/Shoulda-style matchers to
