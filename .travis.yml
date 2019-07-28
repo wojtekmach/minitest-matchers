@@ -1,6 +1,5 @@
 rvm:
 - 2.3.0
 
-sudo: false
 cache: bundler
 script: RUBYOPT="-w $RUBYOPT" bundle exec rake
